@@ -277,9 +277,9 @@ Navbar
 }
 
 @media screen and (min-width: 992px) {
-  .navbar {
+  /* .navbar {
     background: transparent;
-  }
+  } */
 }
 /*
 =============== 
@@ -442,7 +442,7 @@ Hero
 .woundLaw-img {
   margin: 0 auto;
   display: none;
-  width: 30vw;
+  width: 20vw;
 }
 .woundLaw-info h4 {
   color: var(--clr-grey-5);
@@ -454,10 +454,10 @@ Hero
   margin-top: 1.25rem;
 }
 .woundlaw-bkgrnd {
-  width: 100vw;
-  height: 50vw;
-  background-position: center;
-  margin-top: 100px;
+  width: auto;
+  height: auto;
+  margin-top: 200px;
+  background-position: top;
   background-repeat: repeat-y;
   background-size: cover;
 }
@@ -467,10 +467,10 @@ Hero
     content: "";
     position: absolute;
     top: 0;
-    left: 65%;
+    left: 0;
     right: 0;
     bottom: 0;
-    background: var(--clr-white);
+    /* background: var(--clr-white); */
   }
   .woundLaw-center {
     grid-template-columns: repeat(12, 1fr);

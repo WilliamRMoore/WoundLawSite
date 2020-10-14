@@ -21,9 +21,11 @@ const WoundLaw = () => {
       childImageSharp:{fluid},
     }
   } = useStaticQuery(query);
-  return <header>
+  return <header className="woundLaw">
     <div className="section-center woundLaw-center">
-      <article className="woundLaw-info"><h1>Welcome to WoundLaw</h1></article>
+      <article className="woundLaw-info">
+        <h2>Over 70 Years Combined Experience</h2>
+      </article>
       <Image fluid={fluid} className="woundLaw-img"/>
     </div>
   </header>
