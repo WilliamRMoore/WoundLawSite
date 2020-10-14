@@ -486,7 +486,7 @@ Hero
   .woundLaw-img {
     display: block;
     grid-row: 1/1;
-    grid-column: 6/-1;
+    grid-column: 10/-1;
   }
 }
 @media screen and (min-width: 1170px) {

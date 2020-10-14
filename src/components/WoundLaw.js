@@ -24,7 +24,14 @@ const WoundLaw = () => {
   return <header className="woundLaw">
     <div className="section-center woundLaw-center">
       <article className="woundLaw-info">
-        <h2>Over 70 Years Combined Experience</h2>
+        <div>
+          <div className="underLine"></div>
+          <h1>WoundLaw</h1>
+          <h2>Over 70 Years Combined Medical Experience</h2>
+          <Link to='/contact' className='btn'>
+            Contact Us
+          </Link>
+        </div>
       </article>
       <Image fluid={fluid} className="woundLaw-img"/>
     </div>

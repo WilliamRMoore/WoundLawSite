@@ -7,12 +7,14 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import services from "../constants/services"
 export default () => {
   return <Layout>
     {/* <WoundLaw></WoundLaw> */}
     <WoundLawBackground>
       <WoundLaw/>
     </WoundLawBackground>
+    <Services/>
   </Layout>
 }
 // ...GatsbyImageSharpFluid
