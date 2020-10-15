@@ -465,7 +465,7 @@ Hero
 @media screen and (min-width: 992px) {
   .woundLaw::before {
     content: "";
-    position: absolute;
+    /* position: absolute; This breaks the Contact Us link for some reason. */
     top: 0;
     left: 0;
     right: 0;
