@@ -884,8 +884,10 @@ Pages
 .error-page,
 .about-page,
 .contact-page {
-  background: var(--clr-grey-10);
+  /* background: var(--clr-grey-10); adds color to background of all pages. */
+  /* background: #459685; */
   min-height: calc(100vh - 5rem - 9rem);
+  margin-top: 120px;
 }
 .error-page {
   display: grid;
@@ -914,7 +916,42 @@ About Page
 .about-page {
   padding: 7rem 0;
 }
-.about-img {
+.about {
+  /* width: 90vw; */
+  max-width: 1170;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 auto;
+  /* padding: 7rem 0; */
+}
+.about article {
+  margin: 2rem 0;
+}
+.about-text {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.about div {
+  width: 20rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* .about-img {
   margin-bottom: 2rem;
   height: 25rem;
 }
@@ -961,7 +998,7 @@ About Page
   .about-text {
     grid-column: 6 / -1;
   }
-}
+} */
 /*
 ===============
 Contact Page

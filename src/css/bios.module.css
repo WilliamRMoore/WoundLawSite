@@ -1,0 +1,30 @@
+.about {
+  width: 90vw;
+  max-width: 1170;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 auto;
+}
+.about article {
+  margin: 2rem 0;
+}
+
+.about div {
+  width: 20rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
+}

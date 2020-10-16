@@ -8,6 +8,7 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import services from "../constants/services"
+import Bios from "../components/Bios"
 export default () => {
   return <Layout>
     {/* <WoundLaw></WoundLaw> */}
