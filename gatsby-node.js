@@ -1,6 +1,6 @@
-// const path = require("path")
+const path = require("path")
 
-// // create pages dynamically
+// create pages dynamically
 // exports.createPages = async ({ graphql, actions }) => {
 //   const { createPage } = actions
 //   const result = await graphql(`
@@ -23,3 +23,27 @@
 //     })
 //   })
 // }
+
+//create pages dynamically
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const result = await graphql(`
+  {
+    services: allContentfulService {
+      nodes {
+        slug
+      }
+    }
+  }
+`)
+
+  result.data.services.nodes.forEach(service => {
+    createPage({
+      path: `/services/${service.slug}`,
+      component: path.resolve(`src/templates/blog-template.js`),
+      context: {
+        slug: service.slug,
+      },
+    })
+  })
+}

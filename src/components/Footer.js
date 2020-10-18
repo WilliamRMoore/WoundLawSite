@@ -1,7 +1,14 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
 const Footer = () => {
-  return <h2>footer component</h2>
+  return <footer className="footer">
+    <div>
+      <h4>woundlaw</h4>
+      <h4>copyright&copy; 
+        <span>William Moore</span> all rights reserved
+      </h4>
+    </div>
+  </footer>
 }
 
 export default Footer

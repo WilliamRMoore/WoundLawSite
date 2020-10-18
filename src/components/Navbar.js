@@ -3,12 +3,12 @@ import React from "react"
 import Logo from "../components/Logo"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
-const Navbar = () => {
+const Navbar = ({toggleSidebar}) => {
   return <nav className="navbar">
     <div className="nav-center">
       <div className="nav-header">
         <Logo/>
-        <button type="button" className="toggle-btn">
+        <button type="button" className="toggle-btn" onClick={toggleSidebar}>
           <FaAlignRight/>
         </button>
       </div>
