@@ -6,16 +6,44 @@ import WoundLawBackground from "../components/WoundLawBackground"
 import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
-import Blogs from "../components/Blogs"
+// import Blogs from "../components/Services"
 import services from "../constants/services"
 import Bios from "../components/Bios"
-export default () => {
+
+export default ({data}) => {
+  console.log(data);
+  const {
+    allContentfulService: {nodes:services}
+  } = data
+
   return <Layout>
     {/* <WoundLaw></WoundLaw> */}
     <WoundLawBackground>
       <WoundLaw/>
     </WoundLawBackground>
-    <Services/>
+    <Services services={services} title="services" showLink />
   </Layout>
 }
 // ...GatsbyImageSharpFluid
+export const query = graphql`
+{
+    allContentfulService {
+      nodes {
+        id
+        title
+        slug
+        content {
+          content
+        }
+        description {
+          description
+        }
+        image {
+          fluid {
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+    }
+  }
+`

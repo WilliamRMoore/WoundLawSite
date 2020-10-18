@@ -1,21 +1,21 @@
 import React from "react"
 import Title from "./Title"
-import services from "../constants/services"
-const Services = () => {
-  return <section className="section bg-grey">
-    <Title title="services"/>
-    <div className="section-center services-center">
-      {services.map((service)=>{
-        const {id,icon,title,text} = service
-        return <article key={id} className="service">
-          {icon}
-      <h4>{title}</h4>
-      <div className="underLine"></div>
-      <p>{text}</p>
-        </article>
+import Service from "./Service"
+import { Link } from "gatsby"
+
+export const Services = ({services,title,showLink}) => {
+  return <section className="section">
+    <Title title={title}/>
+    <div className="section-center blogs-center">
+      {services.map(service => {
+        return <Service key={service.id} {...service} />
       })}
     </div>
+    {showLink && (
+      <Link to="/services" className="btn center-btn">
+        Services
+      </Link>
+    )}
   </section>
 }
-
 export default Services
