@@ -9,6 +9,7 @@ import Projects from "../components/Projects"
 // import Blogs from "../components/Services"
 import services from "../constants/services"
 import Bios from "../components/Bios"
+import SEO from "../components/SEO"
 
 export default ({data}) => {
   console.log(data);
@@ -18,6 +19,7 @@ export default ({data}) => {
 
   return <Layout>
     {/* <WoundLaw></WoundLaw> */}
+    <SEO title="Home" description="this is our home page"/>
     <WoundLawBackground>
       <WoundLaw/>
     </WoundLawBackground>

@@ -9,12 +9,12 @@
 })
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    title: "WoundLaw",
+    description: "WoundLaw is a legal consulting firm that focuses on medical cases such as those related to woundcare medicine",
+    author: "@William Moore",
+    twitterUsername: "@john_doe",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://woundlaw.netlify.app/",
   },
   plugins: [
     `gatsby-transformer-sharp`,
