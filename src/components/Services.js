@@ -1,7 +1,7 @@
 import React from "react"
 import Title from "./Title"
 import Service from "./Service"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 export const Services = ({services,title,showLink}) => {
   return <section className="section">
@@ -11,11 +11,11 @@ export const Services = ({services,title,showLink}) => {
         return <Service key={service.id} {...service} />
       })}
     </div>
-    {showLink && (
+    {/* {showLink && (
       <Link to="/services" className="btn center-btn">
         Services
       </Link>
-    )}
+    )} */}
   </section>
 }
 export default Services

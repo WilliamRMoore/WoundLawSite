@@ -11,11 +11,11 @@ const data = [
     text: "The Doctors",
     url: "/the-doctors/",
   },
-  {
-    id: 4,
-    text: "Services",
-    url: "/services/",
-  },
+  // {
+  //   id: 4,
+  //   text: "Services",
+  //   url: "/services/",
+  // },
   {
     id: 5,
     text: "contact",

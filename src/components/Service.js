@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 const Service = ({id, title, image, slug, description}) => {
@@ -14,6 +13,5 @@ const Service = ({id, title, image, slug, description}) => {
   </Link>
 }
 
-Service.propTypes = {}
 
 export default Service
