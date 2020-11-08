@@ -1,5 +1,5 @@
 import logo from "../assets/WoundLawLogo.png"
-
+import { Link } from "gatsby"
 import React from 'react'
 
 function Logo() {

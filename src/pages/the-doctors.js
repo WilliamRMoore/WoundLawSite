@@ -12,10 +12,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import styles from '../css/bios.module.css'
 import Image from "gatsby-image"
-import {Link} from "gatsby"
 import Title from "../components/Title"
+import LiLink from "../components/LiLink"
 
 const ComponentName = ({ data }) => {
   const {allContentfulDocBio:{nodes:bios}} = data
@@ -29,6 +28,7 @@ const ComponentName = ({ data }) => {
           <Image fluid={bio.headshot.fluid} alt={bio.name}></Image>
       <h3>{bio.name}</h3>
       <p className="about-text">{bio.bio.bio}</p>
+      <div><LiLink linkedin={bio.linkedin}/></div>
         </article>
       })}
     </section>

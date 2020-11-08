@@ -24,7 +24,7 @@ const WoundLaw = () => {
   return <header className="woundLaw">
     <div className="section-center woundLaw-center">
       <article className="woundLaw-info">
-        <div>
+        <div className="woundLaw-txt">
           <div className="underLine"></div>
           <h1>WoundLaw</h1>
           <h2>Over 70 Years Combined Medical Experience</h2>
