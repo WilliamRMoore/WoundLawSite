@@ -19,7 +19,7 @@ const ComponentName = ({ data }) => {
           <Image fluid={bio.headshot.fluid} alt={bio.name}></Image>
       <h3>{bio.name}</h3>
       <p className="about-text">{bio.bio.bio}</p>
-      <div className="btn"><LiLink linkedin={bio.linkedin}/>LinkedIn</div>
+          <a href={bio.linkedin} className="social-link"><div className="btn"><LiLink linkedin={bio.linkedin}/>LinkedIn</div></a>
         </article>
       })}
     </section>
