@@ -21,7 +21,6 @@ import BackgroundImage from 'gatsby-background-image'
             childImageSharp:{fluid},
         }
     } = useStaticQuery(query);
-    console.log(fluid)
     return (
         <BackgroundImage
           Tag="section"

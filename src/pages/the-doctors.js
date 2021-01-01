@@ -9,9 +9,8 @@ import SEO from "../components/SEO"
 
 const ComponentName = ({ data }) => {
   const {allContentfulDocBio:{nodes:bios}} = data
-  console.log(bios);
   return <Layout>
-    <SEO title="About" description="Woundlaw Doctors Profile"/>
+    <SEO title="WoundLaw Doctors Profile" description="Meet our expert wound doctors. We offer our extensive medical expertise to help assess and prepare you and your legal team. We provide expert and authoritative medical judgment and guidance when we evaluate your case."/>
     <section  className="about-page">
       <Title title="Meet The Doctors"/>
     <section className="about-page about">

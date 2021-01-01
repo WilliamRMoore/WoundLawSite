@@ -3,11 +3,11 @@ import {FaLinkedin } from "react-icons/fa"
 
 const LiLink = ({linkedin}) => {
     return (
-        <div className="soc-link-container">
-            <a href={linkedin} className="social-link">
+        <a href={linkedin} className="social-link">
+            <div className="soc-link-container">
                 <FaLinkedin className="social-icon"></FaLinkedin>
-            </a>
-        </div>
+            </div>
+        </a>
     )
 }
 
